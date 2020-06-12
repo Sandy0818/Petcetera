@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+*
+{
+    box-sizing: border-box;
+    direction: ltr;
+}
+
+input[type=text], input[type=password]
+{
+    width: 35%;
+    padding: 15px;
+    display: inline-block;
+    border: none;
+    margin: 5px 0px 20px 0px;
+    background: white;
+}
+
+input[type=text], input[type=password]
+{
+    background-color: #ddd;
+    outline: none; 
+}
+
+hr
+{
+    margin-bottom: 15px;
+    border: 1px solid paleturquoise;
+}
+
+button
+{
+    background-color: green;
+    color: white;
+    padding: 15px 20px;
+    margin: 8px 0px;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    opacity: 0.9;
+    /*float: left;*/
+}
+
+button:hover
+{
+    opacity: 1;
+}
+
+.container
+{
+    padding: 15px;
+    width: 500px;
+    clear: both;
+    direction: ltr;
+}
+
+.container input
+{
+    width: 100%;
+    clear: both;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .login {
+    width: 100%;
+    }
+  }
+  
+  body
+  {
+    background-image: url("Login_imgs/login_img.jpg");
+    background-repeat: repeat-x; 
+    background-position: center; 
+    opacity: 1;
+  }
+  
+  input[type=submit]
+  {
+    width: 25%;
+    padding: 15px 20px;
+    margin: 8px 0px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: greenyellow;
+      
+  }
+        </style>
+    </head>
+    <body>
+        <form action="loginServlet" method="post" style="border:1px solid #ccc">
+            <div class="container">
+                <h1>Login</h1>
+
+                <p>Please fill in the below details to login</p>
+
+                <hr>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" style="direction:ltr" placeholder="Enter email id" name="email" required><br>
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" style="direction:ltr" placeholder="Enter password" name="password" required><br>
+
+                <div>
+                    <input type="submit" class="login" value="Login">
+                </div>
+            </div>
+        
+        </form>
+    </body>
+</html>

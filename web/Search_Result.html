@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search Result</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="master.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="hp_dropdown.js"></script>
+        
+        <style>
+            .navbar {
+  width : 100%;
+  overflow: hidden;
+  background: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: rgb(80, 97, 102);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+.search{
+  display: block;
+  width : 260px;
+  margin : 0 auto;
+}
+input,#sbutton{
+  vertical-align: middle;
+  padding : 14px 16px;
+  float:left;
+}
+#sbutton{
+  border : 2px solid rgba(0,0,0,0);
+  cursor : pointer;
+}
+    </style>
+        
+    </head>
+    <body>
+            <div class="navbar">
+            <a href="home_page.html">Home</a>
+      
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Menu
+                </button>
+            
+                <div class="dropdown-content" id="myDropdown">
+                <a href="#">Cat</a>
+                <a href="Searcg_result.html">Dog</a>
+                <a href="#">Fish</a>
+                <a href="#">Horse</a>
+                <a href="#">Birds</a>
+                </div>
+            </div>
+            
+            <div class="search">
+                <input type="text" name="query" placeholder="Search">
+                <button type="button" name="searchq" id="sbutton"><i class="fas fa-search"></i></button>
+            </div>
+
+  
+            <i class="fa fa-shopping-cart" style="font-size:35px; color: white; float: right; direction: ltr; margin-right: 10px; margin-top: 7px"></i>
+            <a href="login.html" style="position: relative; float: right;">Login</a>
+            <a href="Sign_up2.html" style="position: relative; float: right;">Sign up</a>
+  
+        </div>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+    box-sizing: border-box;
+    /*direction: rtl;*/
+
+}
+
+.column
+{
+  float: left;
+  width: 50%;
+}
+
+.row::after
+{
+  display: table;
+  clear: both;
+  content: "";
+}
+
+body
+{
+    background-image: url("Signup_imgs/signup_img.jpg"); 
+    background-repeat: repeat-x; 
+    background-position: center; 
+    opacity: 1;
+}
+
+/*img
+{
+    opacity: 0.5;
+}*/
+
+/* Full-width input fields */
+  input[type=text], input[type=password], input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signin {
+  float: left;
+  width: 25%;
+}
+
+.signin
+{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  opacity: 0.9;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  width: 500px;
+  clear: both;
+  direction: ltr;
+}
+
+.container input
+{
+    width: 100%;
+    clear: both;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+        </style>
+    </head>
+    <body>
+        <form action="SigninServlet" method="post" style="border:1px solid #ccc">
+        <div class="container">
+            <h1 style="direction: ltr">Sign Up</h1>
+        <p style="direction: ltr">Please fill in this form to create an account.</p>
+        <hr>
+
+        <label for="name"><b>Full Name</b></label>
+        <input type="text" style="direction: ltr" placeholder="Enter Name" name="name" required><br>
+
+        <label for="address"><b>Address</b></label>
+        <input type="text" style="direction: ltr" placeholder="Enter Address" name="address" required><br>
+
+        <label for="number"><b>Mobile Number</b></label>
+        <input type="number" style="direction: ltr" placeholder="Enter Phn no" name="number" required><br>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" style="direction: ltr" placeholder="Enter Email" name="email" required><br>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" style="direction: ltr" placeholder="Enter Password" name="psw" required><br>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" style="direction: ltr" placeholder="Repeat Password" name="psw-repeat" required>
+
+        <!--<label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>-->
+
+        <p>By creating an account you agree to our <a href="#" style="color:orangered">Terms & Privacy</a>.</p>
+
+        <div class="clearfix">
+            <button type="button" class="cancelbtn" onclick="location.href='home_page.html'">Cancel</button>
+            <input type="submit" value="Sign Up" class="signin">
+        </div>
+        </div>
+        </form>
+    </body>
+</html>

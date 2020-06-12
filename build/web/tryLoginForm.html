@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <style>
+*
+{
+    box-sizing: border-box;
+    direction: ltr;
+}
+
+input[type=text], input[type=password]
+{
+    width: 35%;
+    padding: 15px;
+    display: inline-block;
+    border: none;
+    margin: 5px 0px 20px 0px;
+    background: white;
+}
+
+input[type=text], input[type=password]
+{
+    background-color: #ddd;
+    outline: none; 
+}
+  
+input[type=submit]
+  {
+    width: 25%;
+    padding: 15px 20px;
+    margin: 8px 0px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: greenyellow;
+      
+  }
+        </style>
+    </head>
+    <body>
+        <form name="loginForm" method="post" action="loginServlet">
+    Username: <input type="text" name="email"/> <br/>
+    Password: <input type="password" name="password"/> <br/>
+    <input type="submit" value="Login" class="login" formaction = "" />
+</form>
+    </body>
+</html>
